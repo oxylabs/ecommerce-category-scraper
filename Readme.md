@@ -12,7 +12,6 @@ The project simplifies e-commerce scraping workflows, making it accessible to en
 
 Developers can use this open-source integration to extract product data at scale with **enterprise-grade reliability**.
 
----
 
 ## Use Case: Price Comparison Tool
 
@@ -27,33 +26,29 @@ A business needs to compare competitor product prices efficiently across categor
 **Final Output:**  
 Structured product data ready for analytics, reporting, or integration into pricing workflows.
 
----
 
 ## Key Features
 
-- **Low-code simplicity** → Build custom scraping workflows without advanced coding knowledge.  
-- **Enterprise-ready infrastructure** → Automated CAPTCHA solving, IP block handling, and dynamic browsing.  
-- **Pre-built scraper** → Open-source `ecommerce-category-scraper` for rapid adoption.  
-- **Flexible scalability** → Works for small projects (free AI Studio credits) or enterprise-scale scrapes.  
-- **Cost optimization** → Cursor reduces coding effort; AI Studio ensures task-based scalability.  
+- **Low-code simplicity** - Build custom scraping workflows without advanced coding knowledge.  
+- **Enterprise-ready infrastructure** - Automated CAPTCHA solving, IP block handling, and dynamic browsing.  
+- **Pre-built scraper** - Open-source `ecommerce-category-scraper` for rapid adoption.  
+- **Flexible scalability** - Works for small projects (free AI Studio credits) or enterprise-scale scrapes.  
+- **Cost optimization** - Cursor reduces coding effort; AI Studio ensures task-based scalability.  
 
----
 
 ## Workflow
 
-1. **Browser Agent** → Collects all product URLs (with pagination & geo-specific categories).  
-2. **AI-Scraper** → Extracts structured data fields (e.g., pricing, product name, stock).  
-3. **Cursor** → Refines integration code with context-aware AI suggestions.  
-4. **Result** → Clean, structured dataset ready for business intelligence tools.  
+1. **Browser Agent** - Collects all product URLs (with pagination & geo-specific categories).  
+2. **AI-Scraper** - Extracts structured data fields (e.g., pricing, product name, stock).  
+3. **Cursor** - Refines integration code with context-aware AI suggestions.  
+4. **Result** - Clean, structured dataset ready for business intelligence tools.  
 
----
 
 ## 📺 Demo @ Oxycon
 
 This repository is part of the **Oxycon 2025 private conference demo**.  
 The live session shows how engineers can build a price comparison tool in real time using **AI Studio + Cursor**.
 
----
 
 ## Resources
 

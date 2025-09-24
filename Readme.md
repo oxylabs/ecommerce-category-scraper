@@ -44,7 +44,7 @@ Structured product data ready for analytics, reporting, or integration into pric
 4. **Result** - Clean, structured dataset ready for business intelligence tools.  
 
 
-## 📺 Demo @ Oxycon
+##  Demo @ Oxycon
 
 This repository is part of the **Oxycon 2025 private conference demo**.  
 The live session shows how engineers can build a price comparison tool in real time using **AI Studio + Cursor**.

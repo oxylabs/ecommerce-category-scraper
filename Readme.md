@@ -1,6 +1,6 @@
 # Ecommerce Category Scraper
 
-<img width="847" height="382" alt="image" src="https://github.com/user-attachments/assets/167f7424-8889-40a0-bd07-1c6bcb450374" />
+[![AI-Studio Python (1)]([https://raw.githubusercontent.com/oxylabs/oxylabs-ai-studio-py/refs/heads/main/images/Github-AI-Studio-1262x525px%20new.png](https://github.com/oxylabs/ecommerce-category-scraper/blob/main/Ai-Studio2.png))](https://aistudio.oxylabs.io/?utm_source=877&utm_medium=affiliate&utm_campaign=ai_studio&utm_content=ecommerce-category-scraper-github&groupid=877&transaction_id=102f49063ab94276ae8f116d224b67) 
 
 
 [![](https://dcbadge.limes.pink/api/server/Pds3gBmKMH?style=for-the-badge&theme=discord)](https://discord.gg/Pds3gBmKMH) [![YouTube](https://img.shields.io/badge/YouTube-Oxylabs-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@oxylabs)

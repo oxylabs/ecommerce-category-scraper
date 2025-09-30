@@ -23,11 +23,16 @@ Before you begin, make sure you have Oxylabs AI studio API key. Obtain your API 
   git clone https://github.com/oxylabs/ecommerce-category-scraper.git
   ```
 
+- Navigate to the repository:
+  ```bash
+  cd ecommerce-category-scraper
+  ```
+
 - Install the dependencies:
   ```bash
   uv sync
   ```
 - Enable the virtual environment:
   ```bash
-  uv venv
+  source .venv/bin/activate
   ```

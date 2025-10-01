@@ -26,7 +26,7 @@ What problems does this tool solve?
 
 ## 🤖 How it works
 
-- **Browser Agent**: Collects all product URLs, handling pagination and location-specific categories.
+- **Browser Agent**: Locates category in the website and collects all category pagination URLs.
 - **AI-Scraper**: Extracts all product URLs from category listing pages.
 - **AI-Scraper**: Extracts structured product data like pricing, titles, and stock availability. Based on user prompt or JSON schema.
 - **Final Output**: Clean, structured datasets ready for use in analytics, reporting, or pricing workflows. Which can be saved to JSONL file or returned to the user programatically.

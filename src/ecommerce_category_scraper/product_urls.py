@@ -10,12 +10,12 @@ logger = logging.getLogger(__name__)
 
 
 PRODUCT_URLS_DESCRIPTION = """
-A list of product URL links in category pagination page:
+A list of product URL links in category listing page:
 - Only include URL links that are in this category listing;
-- Usually there are from 20 to 30. Could be more or less. Last pagination page sometimes have less;
-- Do not include other product URLs, or category URLs, or related product URLs, which are not part of category pagination page listing;
+- Usually there are from 20 to 30. Could be more or less. Last pagination page listing may have less;
+- Do not include other product URLs, or category URLs, or related product URLs, which are not part of category listing page;
 - Don't invent any product URLs or modify existing ones;
-- Return only URL links that you find in category pagination page.
+- Return only URL links that you find in category listing page.
 """
 
 

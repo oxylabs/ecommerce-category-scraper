@@ -16,15 +16,15 @@ Only visit provided website, do not navigate to other pages, don't click on any 
 If provided website is not a category listing page, don't look for pagination information. 
 """
 PAGINATION_FIELD_DESCRIPTION = """
-Return pagination ecommerce category listing URLs from one you are currently in to current + 49 pages, but no more than 
-50 URLs. It is okey to return less if no more pages are available. If you noticed there are missing URLs because webpage 
+Return pagination ecommerce category listing URLs from one you are currently in to current + 99 pages, but no more than 
+100 URLs. It is okey to return less if no more pages are available. If you noticed there are missing URLs because webpage 
 does not list them all, create them to match existing ones."""
 PAGINATION_SCHEMA = {
     "type": "object",
     "properties": {
         "paginationUrls": {
             "type": "array",
-            "maxItems": 50,
+            "maxItems": 100,
             "description": PAGINATION_FIELD_DESCRIPTION,
             "items": {"type": "string"},
         }

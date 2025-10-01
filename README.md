@@ -102,7 +102,6 @@ result = await scrape_category(
     category_url="https://example.com/category",  # OR use ecommerce_domain_url
     parsing_prompt="Extract product name, price, and rating",
     max_products=50,
-    json_filepath="results.json",
 )
 ```
 

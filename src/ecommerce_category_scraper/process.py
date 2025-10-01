@@ -84,7 +84,7 @@ async def scrape_category(
                 category_url,
                 geo_location,
             )
-            pagination_urls = list(set([category_url] + pagination_urls))   
+            pagination_urls = list(dict.fromkeys([category_url] + pagination_urls))   
     except Exception as e:
         logger.error(f"Error finding pagination URLs in provided website: {e!r}.")
         raise CategoryScrapingError(e)
@@ -122,7 +122,7 @@ async def scrape_category(
                 logger.info(
                     f"Found {len(page_product_urls)} product URLs in pagination URL: {pagination_url}."
                 )
-                page_product_urls = list(set(page_product_urls))
+                page_product_urls = list(dict.fromkeys(page_product_urls))
                 product_urls.extend(
                     [(pagination_url, product_url) for product_url in page_product_urls]
                 )
@@ -139,7 +139,7 @@ async def scrape_category(
         )
 
     if product_urls:
-        product_urls = list(set(product_urls))
+        product_urls = list(dict.fromkeys(product_urls))
         logger.info(f"Found {len(product_urls)} product URLs in total.")
     else:
         logger.info(f"No product URLs found in any pagination URL.")

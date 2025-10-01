@@ -216,4 +216,3 @@ async def scrape_category(
         return None
 
     return product_details
-

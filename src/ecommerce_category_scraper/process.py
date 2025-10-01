@@ -31,7 +31,7 @@ async def scrape_category(
     render_javascript: bool = False,
     json_schema: dict | None = None,
     parsing_prompt: str | None = None,
-    jsonl_filepath: str | None = None,
+    json_filepath: str | None = None,
     max_pages: int | None = None,
     max_products: int | None = None,
 ) -> list[dict] | None:
@@ -206,13 +206,12 @@ async def scrape_category(
         f"Successfully scraped {len(product_details)} out of {max_products} product details."
     )
 
-    if jsonl_filepath:
+    if json_filepath:
         logger.info(
-            f"Saving {len(product_details)} product details to {jsonl_filepath}."
+            f"Saving {len(product_details)} product details to {json_filepath}."
         )
-        with open(jsonl_filepath, "w") as f:
-            for product_detail in product_details:
-                f.write(json.dumps(product_detail, ensure_ascii=False) + "\n")
+        with open(json_filepath, "w") as f:
+            f.write(json.dumps(product_details, ensure_ascii=False))
         return None
 
     return product_details

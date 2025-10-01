@@ -29,7 +29,7 @@ What problems does this tool solve?
 - **Browser Agent**: Locates category in the website and collects all category pagination URLs.
 - **AI-Scraper**: Extracts all product URLs from category listing pages.
 - **AI-Scraper**: Extracts structured product data like pricing, titles, and stock availability. Based on user prompt or JSON schema.
-- **Final Output**: Clean, structured datasets ready for use in analytics, reporting, or pricing workflows. Which can be saved to JSONL file or returned to the user programatically.
+- **Final Output**: Clean, structured datasets ready for use in analytics, reporting, or pricing workflows. Which can be saved to JSON file or returned to the user programatically.
 
 
 ## ✅ Prerequisites
@@ -68,17 +68,25 @@ Before you begin, make sure you have Oxylabs AI studio API key. Obtain your API 
 
 Both tests scrape books from `books.toscrape.com` (Sequential art category), extracting book name, price, UPC code, and availability.
 
-**Test 1:** Accepts a category URL directly and scrapes products from that specific category page.
+- **Test 1:** Accepts a category URL directly and scrapes products from that specific category page.
+  Replace `<your-api-key>` with your actual API key.
+  ```bash
+  python -m test.test_1 --oxylabs-ai-studio-api-key <your-api-key>
+  ```
+  Results are saved to `test_1_results.json`. View with:
+  ```bash
+  cat test_1_results.json | python -m json.tool
+  ```
 
-```bash
-python -m test.test_1 --oxylabs-ai-studio-api-key <your-api-key>
-```
-
-**Test 2:** Accepts an ecommerce domain URL and automatically searches for and identifies category pages before scraping.
-
-```bash
-python -m test.test_2 --oxylabs-ai-studio-api-key <your-api-key>
-```
+- **Test 2:** Accepts an ecommerce domain URL and automatically searches for and identifies category pages before scraping.
+  Replace `<your-api-key>` with your actual API key.
+  ```bash
+  python -m test.test_2 --oxylabs-ai-studio-api-key <your-api-key>
+  ```
+  Results are saved to `test_2_results.json`. View with:
+  ```bash
+  cat test_2_results.json | python -m json.tool
+  ```
 
 **Note:** Modify tests for different domains and settings.
 
@@ -93,7 +101,8 @@ result = await scrape_category(
     api_key="your-api-key",
     category_url="https://example.com/category",  # OR use ecommerce_domain_url
     parsing_prompt="Extract product name, price, and rating",
-    max_products=50
+    max_products=50,
+    json_filepath="results.json",
 )
 ```
 
@@ -113,7 +122,7 @@ result = await scrape_category(
 **Optional:**
 - `geo_location` - IP location in ISO2 format (e.g., `"US"`)
 - `render_javascript` - Enable JavaScript rendering (default: `False`)
-- `jsonl_filepath` - Save results to file (if not provided, returns list)
+- `json_filepath` - Save results to file (if not provided, returns list)
 - `max_pages` - Maximum category pages to scrape (default: all)
 - `max_products` - Maximum products to scrape (default: all)
 

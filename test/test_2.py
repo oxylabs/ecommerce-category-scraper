@@ -14,7 +14,7 @@ async def test_1(oxylabs_ai_studio_api_key: str):
         render_javascript=False,
         max_pages=2,
         max_products=40,
-        jsonl_filepath="test_2_results.jsonl",
+        json_filepath="test_2_results.json",
     )
 
 

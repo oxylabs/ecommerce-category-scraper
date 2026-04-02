@@ -154,4 +154,4 @@ This E-commerce Category Scraper was featured live at Oxycon 2025. The presentat
 For a deeper dive into features, integrations, and examples, and documentation, visit the [AI Studio](https://aistudio.oxylabs.io/) website.
 
 ## 💬 Contact us
-If you have questions or need support, reach out to us at hello@oxylabs.io, through [live chat](https://oxylabs.drift.click/oxybot), or join our [Discord community](https://discord.com/invite/Pds3gBmKMH).
+If you have questions or need support, reach out to us at support@oxylabs.io, or through live chat, accessible via [Oxylabs Dashboard](https://dashboard.oxylabs.io/en/), or join our [Discord community](https://discord.gg/Pds3gBmKMH). For enterprise-related inquiries, contact your dedicated account manager.
